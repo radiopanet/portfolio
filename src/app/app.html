@@ -1,0 +1,123 @@
+<div class="app">
+  <aside class="sidebar" [class.collapsed]="collapsed()" [class.open]="mobileMenu()">
+    <div class="profile-pic">
+      <img src="./profile.png" alt="Profile" />
+    </div>
+
+
+    <div class="name">{{ title() }}</div>
+    <nav class="nav-links">
+      <a href="#education" class="nav-item">
+        <span class="icon">🎓</span>
+        <span class="label" *ngIf="!collapsed()">Education</span>
+      </a>
+      <a href="#experience" class="nav-item">
+        <span class="icon">💼</span>
+        <span class="label" *ngIf="!collapsed()">Experience</span>
+      </a>
+      <a href="#techStack" class="nav-item">
+        <span class="icon">📁</span>
+        <span class="label" *ngIf="!collapsed()">Projects</span>
+      </a>
+      <a href="#technologies" class="nav-item">
+        <span class="icon">🎯</span>
+        <span class="label" *ngIf="!collapsed()">Hobbies</span>
+      </a>
+    </nav>
+    <div class="toggle-btns" style="margin-top:auto;">
+      <button (click)="toggleSidebar()">☰</button>
+      <button (click)="toggleDark()">🌓</button>
+    </div>
+  </aside>
+
+
+  <main class="content">
+    <h1>{{ title() }}</h1>
+
+
+    <section class="section" id="education">
+      <h3>Education</h3>
+      <p><strong>Vaal University of Technology</strong><br>National Diploma in Information Technology (2014)</p>
+      <p><strong>Microsoft (LGIT)</strong><br>Programming in C# (70-483) – 2017<br>Programming in HTML5 with JavaScript
+        & CSS3 (70-480) – 2017<br>HTML5 Application Development Fundamentals (98-375) – 2017<br>Software Development
+        Fundamentals (98-361) – 2017</p>
+      <p><strong>PAS</strong><br>PSS-AM101 – Understanding Alarms & Event Analysis (2019)</p>
+      <!-- <p><strong>Microsoft</strong><br>Azure Fundamentals –  2025</p> -->
+      <p><strong>LinkedIn Learning</strong><br>Business Analysis – July 2025</p>
+    </section>
+
+
+    <section class="section" id="experience">
+<h3>Experience</h3>
+
+
+<p><strong>Inkhanyeti Solutions (PPO Serve)</strong> — Software Developer (Jul 2024 – Mar 2025)<br>
+Java, TypeScript, SQL, Lucid. Built REST APIs for patient management, upgraded doctor dashboards, handled data attribution, system performance monitoring, and Jira ticket resolution.</p>
+
+
+<p><strong>Mecer Inter-Ed</strong> — Intermediate Software Developer (Jan 2023 – Feb 2024)<br>
+Node.js, Angular, TypeScript. Built VPOS Fiscal Console portals, dataFLEX360 DB, feature libraries, dev environment setup, and system maintenance.</p>
+
+
+<p><strong>Mystragistix (ARC Store)</strong> — Software Developer (Feb 2022 – Nov 2022)<br>
+C#, DynamicWeb, JavaScript, LS Retail. Integrated Payflex, AMEX, EBucks; built several modules, booking tools, monitoring tools, and API integrations.</p>
+
+
+<p><strong>Wipro Limited</strong> — Software Engineer (Apr 2021 – Feb 2022)<br>
+Angular 7, JavaScript, Web API, OpenText WEM. Built Standard Bank forms, calculators, and financial applications.</p>
+
+
+<p><strong>MAH Quests</strong> — Coding Facilitator (Feb 2021 – Aug 2021)<br>
+Taught HTML/CSS/JS/PHP, built student management system (C#, Web API, SQL, Azure, Angular).</p>
+
+
+<p><strong>Business Connexion (BCX)</strong> — Systems Engineer (Nov 2018 – Mar 2021)<br>
+C#, Angular 7, Windows Forms, SQL, PowerShell, OSISoft PI. Built automation tools, dashboards, reporting tools, training apps, integrations, and carried out application support.</p>
+
+
+<p><strong>Engagemedia</strong> — Developer (2019 – Present, Freelance)<br>
+ASP.NET, SharePoint, VB/VBA automation, workflow automation, and app conversions.</p>
+
+
+<p><strong>Providence Software Solutions</strong> — Software Developer (Feb 2018 – Oct 2018)<br>
+C#, ASP.NET Web API, JQuery, API integration, mobile apps (Ionic, Angular 2+), and third‑party integrations.</p>
+
+
+<p><strong>Mint Management Technologies</strong> — Software Developer (Feb 2017 – Jan 2018)<br>
+C#, SharePoint, JavaScript, Nintex, Power BI, DAX, business process automation.</p>
+
+
+<p><strong>Capacity / Huawei Technologies</strong> — RF Service Engineer (Jan 2016 – Jan 2017)<br>
+C#, SQL, network analysis, drive‑test log analysis, and reporting.</p>
+</section>
+      <section class="section" id="techStack">
+      <h3>Tech Stack</h3>
+      <p>
+        <strong>PAAT</strong> — PostgreSQL, Asp.Net Core, Angular, TailwindCSS.
+      </p>
+      <p>
+        <strong>SAAT</strong> — PostgreSQL, Asp.Net Core, Angular, TailwindCSS.
+      </p>
+    </section>
+     <section class="section" id="technologies">
+      <h3>Languages, Technologies & Frameworks</h3>
+      
+        <ul>
+          <li>.Net Framework / .Net Core</li>
+          <li>Node.Js</li>
+          <li>C#</li>
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>VBA</li>
+          <li>VB.Net</li>
+          <li>Bootstrap</li>
+          <li>Material UI</li>
+          <li>RESTful APIs</li>
+          <li>Azure</li>
+          <li>Attlasian</li>
+        </ul>
+      
+    </section>
+  </main>
+</div>
